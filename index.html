@@ -29,7 +29,7 @@
         function pay() {
             const tickets = document.getElementById("tickets").value;
             const total = tickets * ticketPrice * 100; // Convertir a centavos
-            const clientTransactionId = "ID_UNICO_X_TRANSACCION-" + Date.now();
+            const clientTransactionId = "tx-" + Date.now();
 
             const parametros = {
                 amount: total,
