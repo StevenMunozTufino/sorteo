@@ -11,12 +11,12 @@
     <h1>Compra de Boletos</h1>
     <label for="tickets">Número de boletos a comprar:</label>
     <input type="number" id="tickets" value="1" min="1" onchange="calculateTotal()">
-    <p>Precio por boleto: $2</p>
+    <p>Precio por boleto: $0.25</p>
     <p>Total a pagar: $<span id="total">0.25</span></p>
     <button onclick="pay()">Pagar</button>
 
     <script>
-        const ticketPrice = 2; // Precio por boleto en dólares
+        const ticketPrice = 0.25; // Precio por boleto en dólares
 
         // Función para calcular el total basado en la cantidad de boletos seleccionada
         function calculateTotal() {
